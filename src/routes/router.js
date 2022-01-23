@@ -10,6 +10,7 @@ app.use('/signup',require('../middlewares/user/UserSignUp'))
 app.use('/search_user',require('../middlewares/user/search_user'))
 app.use('/users',require('../middlewares/user/sym_users'))
 app.use('/user_update',require('../middlewares/user/user_update'))
+app.use('/follow_unfollow',require('../middlewares/user/follow_unfollow'))
 
 
 
