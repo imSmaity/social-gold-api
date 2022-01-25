@@ -8,8 +8,8 @@ const postDataStructure={
     uploderName: String,
     uploderAvatar: String,
     timeDate: String,
-    like: Array,
-    comment: Array
+    likes: Array,
+    comments: Array
 }
 const postSchema=new Schema(postDataStructure)
 

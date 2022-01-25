@@ -13,6 +13,9 @@ app.use('/user_update',require('../middlewares/user/user_update'))
 app.use('/follow_unfollow',require('../middlewares/user/follow_unfollow'))
 app.use('/posting',require('../middlewares/user/user_post_Update'))
 app.use('/all_posts',require('../middlewares/user/getAllPosts'))
+app.use('/like_update',require('../middlewares/user/like_update'))
+app.use('/comment_update',require('../middlewares/user/comment_update'))
+app.use('/unlike',require('../middlewares/user/unlike'))
 
 
 

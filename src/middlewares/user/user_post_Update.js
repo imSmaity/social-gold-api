@@ -13,8 +13,8 @@ route.post('/',async (req,res)=>{
         uploderName:req.body.uploderName,
         uploderAvatar:req.body.uploderAvatar,
         timeDate: new Date().toISOString(),
-        like: 0,
-        comment:[]
+        likes: [],
+        comments:[]
     }
     
     const doc=new UserPost(post)
