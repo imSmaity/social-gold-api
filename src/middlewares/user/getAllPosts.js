@@ -19,8 +19,12 @@ route.post('/',async (req,res)=>{
     let postsId=[]
     const findUser=await UserModel.findById(req.body.uid).exec()
     postsId=[...postsId,...findUser.posts]
-   
-    res.send({...findUser._doc,postsData: await fetchPostsById(postsId)})
+    for(let i=0;i<req.body.following.length;i++){
+        const findUser=await UserModel.findById(req.body.following[i]).exec()
+        postsId=[...postsId,...findUser.posts]
+    }
+
+    res.send(await fetchPostsById(postsId))
 })
 
 module.exports=route
