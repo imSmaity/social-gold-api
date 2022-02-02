@@ -16,6 +16,8 @@ app.use('/all_posts',require('../middlewares/user/getAllPosts'))
 app.use('/like_update',require('../middlewares/user/like_update'))
 app.use('/comment_update',require('../middlewares/user/comment_update'))
 app.use('/unlike',require('../middlewares/user/unlike'))
+app.use('/delete_post',require('../middlewares/user/delete_post'))
+app.use('/delete_comment',require('../middlewares/user/delete_comment'))
 
 
 
